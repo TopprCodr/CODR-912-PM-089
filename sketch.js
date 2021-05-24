@@ -54,6 +54,11 @@ function setup() {
       }
       for (var i = 0; i < stones.length; i++) {
         stones[i].display();
+         if(stones[i].body.position.y>370){
+          World.remove(world, stones[i].body);
+              stones.splice(i, 1);
+              i--;
+        }
       }
     ground.display();
     player1.display();
