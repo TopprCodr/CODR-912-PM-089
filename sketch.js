@@ -56,6 +56,7 @@ function setup() {
               particles.splice(i, 1);
               i--;
       }
+      }
       for (var i = 0; i < stones.length; i++) {
         stones[i].display();
          if(stones[i].body.position.y>370){
